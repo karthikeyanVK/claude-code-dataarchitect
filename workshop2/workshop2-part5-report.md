@@ -6,7 +6,7 @@
 
 ---
 
-1. Run the below prompt.
+1. Run the prompt below.
 
    ```
    You are a Data Architect/Data Analyst building a reporting application in Next.js using the existing Gold-layer star schema.
@@ -22,11 +22,11 @@
    - Use an ORM for all database access. Do not write raw SQL in the Next.js application.
    - Use Prisma ORM with TypeScript.
 
-   Dashboard
+    Dashboard Requirements
 
-   Create a clean, modern, responsive Next.js reporting application in `workshop2/report` with two pages.
+    Create a clean, modern, responsive Next.js reporting application in `workshop2/report` with two pages.
 
-   Sales Trend
+    Sales Trend page
 
    - Show total sales or revenue.
    - Show sales volume.
@@ -35,7 +35,7 @@
    - Show sales by customer or segment where available.
    - Provide date, product, and customer filters.
 
-   Campaign Analytics
+    Campaign Analytics page
 
    - Show campaign performance.
    - Show sales or revenue attributed to campaigns where available.
@@ -60,7 +60,7 @@
 
    Deliverables
 
-   Create the following:
+    Create the following:
 
    - A complete Next.js application in `workshop2/report`.
    - Prisma ORM configuration and schema.
@@ -74,17 +74,13 @@
 
    The application must run with `npm run dev` when executed from the `workshop2/report` folder.
 
-   Create a detailed implementation plan and save it to `create_reporting_app.md`.
+   Create a detailed implementation plan and save it as `create_reporting_app.md`.
    Do not implement the plan and do not ask me for permission to implement it. I will implement it myself.
    ```
 
 2. Enter `/plan` in the Claude Code CLI.
 3. Save the generated plan as `create_reporting_app.md`.
-4. Once the implementation is over then navigate to `workshop2/report` folder and run
 
-    ```bash
-    npm run dev
-    ```
 ---
 
 ### Workshop 2 complete.

@@ -88,10 +88,15 @@ See [workshop2/readme.md](./workshop2/readme.md) for full prompts and naming con
 
 Workshop 2 complete: Gold-layer star schema populated.
 
+Workshop 3 creates a governed view of the data platform and a reporting application on the Gold layer.
+
 ### Parts
 
-1. **Governance review** - AI-driven prompt covers metadata/data dictionary, data lineage, and Bronze/Silver/Gold architecture diagrams; produces `governance_handover.md` and `data_lineage.md`.
-2. **Implement lineage and governance** - apply the two handover docs to the project.
-3. **Analytics dashboard** - AI-driven prompt builds a Next.js dashboard on the Gold schema, with Sales Trends and Campaign pages.
+| Part | What you do |
+|---|---|
+| [Part 1 - Governance](./workshop3/governance.md) | Review metadata, lineage, and Bronze/Silver/Gold architecture; produce governance handover documents |
+| [Part 2 - Reporting](./workshop3/reporting.md) | Plan a Next.js analytics dashboard using the Gold schema |
 
-See [workshop3/readme.md](./workshop3/readme.md) for full prompts.
+Work through them in order. Complete the governance review before planning the reporting application.
+
+**Start here: [Part 1 - Governance](./workshop3/governance.md)**

@@ -14,6 +14,13 @@
 
 4. Open `loadbronze.sql` and use the run button in the top right corner of the SQL Server extension to run it
 
+5. Check the table is filled using the SQL Server extension:
+
+   ```sql
+   SELECT * FROM [bronze].[crm_cust_info]
+   ```
+
+   to confirm you have correctly configured the database.
 ---
 
 **Next: [Part 2 - Setup Bronze Layer: Kafka Streaming](./workshop2-part2-kafka-streaming.md)**

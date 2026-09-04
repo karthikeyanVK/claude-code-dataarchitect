@@ -6,8 +6,8 @@
 
 ---
 
-1. Open a PowerShell terminal in VS Code
-2. Start Claude Code in auto-permission mode:
+1. Open a PowerShell terminal in VS Code and navigate to `workshop1`
+2. Start Claude Code in auto-permission mode in `workshop1` folder:
 
    ```bash
    claude.cmd --permission-mode auto
@@ -27,6 +27,7 @@
    * Risks when moving data through Bronze -> Silver -> Gold -> BI
 
    Create a concise `security_handover.md` documenting the key findings, risks, recommended controls, priorities, and any open questions. Base everything on the actual datasets; do not invent information.
+
    ```
 
 4. Copy the generated `security_handover.md` into the `workshop2` folder:

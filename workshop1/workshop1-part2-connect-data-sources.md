@@ -8,7 +8,7 @@
 
 #### 1. Distribute the `.env`
 
-1. Get the `.env` file from the WhatsApp group
+1. Get the `.env` file from the WhatsApp group and change your database to the number allocated to you, if you are allocated 11,the database should be DataWarehouse11
 2. Copy it into all 4 workshop folders: `workshop1`, `workshop2`, `workshop3`, `workshop4`
 
 > [!IMPORTANT]

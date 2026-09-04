@@ -103,7 +103,7 @@
   - Perform sanity testing, but do not run `npm run load` yourself.
   ```
 5. Enter `/clear` in the Claude Code CLI.
-6. Enter `implement create_pipeline.md`.
+6. Enter `Implement create_pipeline.md` and press enter to run in the claude code and let it run.
 7. Once the implementation is over then navigate to `pipeline` folder and run
 
     ```bash
