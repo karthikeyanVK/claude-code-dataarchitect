@@ -11,7 +11,8 @@
 
    ```bash
    npm install
-   node kafka-stream-copy/consume_campaign_events.js
+   cd kafka-stream-copy
+   node ./consume_campaign_events.js
    ```
 
 3. Check the table is filled using the SQL Server extension:
