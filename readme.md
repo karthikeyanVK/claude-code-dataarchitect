@@ -19,7 +19,7 @@ Full data platform, one day, AI-driven:
 **1. Clone the repo**
 
 ```bash
-git clone https://github.com/karthikeyanVK/claudecode-architect-workshop.git
+git clone https://github.com/karthikeyanVK/claude-code-dataarchitect
 ```
 
 **2. Get latest changes**
