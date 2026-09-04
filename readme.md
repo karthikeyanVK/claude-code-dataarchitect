@@ -1,36 +1,36 @@
 # Claude Code Data Architect Workshop
 
-Learn to use AI effectively across your data architecture work: assessing sources, profiling and pulling data, spotting patterns and anomalies, discovering rules, cleansing, designing warehouse models, and reporting. Build, validate, and document a full data platform in a day instead of weeks.
+Build a complete analytics platform with Claude Code: connect raw sources, profile and cleanse data, model a warehouse, create a reporting app, and document governance evidence.
 
-Run the three modules below in order over the day.
+This workshop is designed as a guided, end-to-end data architecture build that can be completed in a day.
 
 ---
 
-## What You'll Build
+## Outcome
 
-Full data platform, one day, AI-driven:
+By the end, you will have a working medallion-style data platform with a governed analytics layer.
 
 | 1. Secure | 2. Model | 3. Analyze |
 |---|---|---|
-| Review raw source data for sensitive fields and risks. | Profile, cleanse, and shape the warehouse into a star schema. | Govern, document, and dashboard the analytics layer. |
+| Review raw source data for sensitive fields and risks. | Profile, cleanse, and shape trusted Silver and Gold layers. | Build dashboards, document lineage, and capture governance findings. |
 
 ---
 
-## Getting Started
+## Quick Start
 
-**1. Clone the repo**
+**1. Clone the repository**
 
 ```bash
 git clone https://github.com/karthikeyanVK/claude-code-dataarchitect
 ```
 
-**2. Get latest changes**
+**2. Pull the latest version**
 
 ```bash
 git pull origin main
 ```
 
-**3. Open the project in VS Code**
+**3. Open the workspace**
 
 ```bash
 cd claude-code-dataarchitect
@@ -39,66 +39,72 @@ code .
 
 ---
 
-## Modules
+## Workshop Flow
 
 | Module | What you do |
 |---|---|
-| [Workshop 1](./workshop1/readme.md) | Setup, connect your data sources, run an AI-driven security review of the data |
-| [Workshop 2](./workshop2/readme.md) | AI-driven profiling, pattern and rule discovery, transformations, warehouse and star-schema design |
-| [Workshop 3](./workshop3/readme.md) | Governance, lineage, and an AI-built analytics dashboard on top of the modeled data |
+| [Workshop 1 - Setup & Security](./workshop1/readme.md) | Prepare the environment, connect sources, and produce the security handover |
+| [Workshop 2 - Medallion Build](./workshop2/readme.md) | Load Bronze, profile data, create Silver rules, copy Kafka events, and build Gold star-schema tables |
+| [Workshop 3 - Reporting & Governance](./workshop3/readme.md) | Plan the analytics dashboard first, then document governance, lineage, and handover evidence |
+| Workshop 4 - Reset Utility | Optional SQL cleanup utility for workshop reruns |
 
 ---
 
-## Workshop 1 - Navigate the Parts
+## Workshop 1
 
-### Prerequisites
+Setup, source connection, and security review.
 
-See [Prerequisites & Validation](./workshop1/workshop1-part1-prerequisites.md) in Workshop 1.
-
-### Repo Structure
-
-```
-DataArchitectWorkshop/
-├── readme.md      # this file, overview, setup, module index
-├── workshop1/     # setup, data source connections, security review
-├── workshop2/     # profiling, rule discovery, warehouse/star-schema design
-└── workshop3/     # governance, lineage, analytics dashboard
-```
-
----
-
-## Workshop 2 - Navigate the Parts
-
-### Prerequisites
-
-Workshop 1 complete: data sources connected, `security_handover.md` produced.
-
-### Parts
-
-1. **Bronze setup** - run `ddl_bronze.sql` and `loadbronze.sql` in the SQL Server extension.
-2. **Silver layer build** - AI-driven prompt inspects Bronze data, generates one YAML per table (`template.yaml` structure), plus a generic TypeScript/Node.js runner (`npm run load`).
-3. **Kafka copy** - `node consume_campaign_events.js` copies streaming Bronze data.
-4. **Gold layer / star schema** - AI-driven prompt builds `gold_fact_sales`, `gold_dim_customer`, `gold_dim_product` from Silver data.
-
-See [workshop2/readme.md](./workshop2/readme.md) for full prompts and naming conventions.
-
----
-
-## Workshop 3 - Navigate the Parts
-
-### Prerequisites
-
-Workshop 2 complete: Gold-layer star schema populated.
-
-Workshop 3 creates a reporting application on the Gold layer and then a governed view of the data platform.
-
-### Parts
+Start with [Workshop 1 - Setup & Security](./workshop1/readme.md).
 
 | Part | What you do |
 |---|---|
-| [Part 1 - Reporting](./workshop3/reporting.md) | Plan a Next.js analytics dashboard using the Gold schema |
-| [Part 2 - Governance](./workshop3/governance.md) | Review metadata, lineage, and Bronze/Silver/Gold architecture; produce governance handover documents |
+| [Part 1 - Prerequisites & Validation](./workshop1/workshop1-part1-prerequisites.md) | Install required tools and verify each one |
+| [Part 2 - Connect Your Data Sources](./workshop1/workshop1-part2-connect-data-sources.md) | Configure `.env`, connect Blob storage, run SQL setup, and validate Kafka connectivity |
+| [Part 3 - Security Check](./workshop1/workshop1-part3-security-check.md) | Review source data for security risks and produce `security_handover.md` |
 
-Work through them in order. Plan the reporting application before completing the governance review.
+---
 
-**Start here: [Part 1 - Reporting](./workshop3/reporting.md)**
+## Workshop 2
+
+Medallion architecture build from Bronze to Gold.
+
+Workshop 1 complete: data sources connected, `security_handover.md` produced.
+
+| Part | What you do |
+|---|---|
+| [Part 1 - Bronze ERP and CRM](./workshop2/workshop2-part1-bronze-erp-crm.md) | Create Bronze tables and load ERP/CRM source data |
+| [Part 2 - Kafka Streaming](./workshop2/workshop2-part2-kafka-streaming.md) | Copy campaign events from Kafka into Bronze |
+| [Part 3 - Silver Layer](./workshop2/workshop2-part3-silver-layer.md) | Profile Bronze data, generate YAML rules, and run the generic pipeline |
+| [Part 4 - Gold Star Schema](./workshop2/workshop2-part4-star-schema.md) | Build reporting-ready fact and dimension tables |
+
+---
+
+## Workshop 3
+
+Reporting first, then governance and handover documentation.
+
+Workshop 2 complete: Gold-layer star schema populated.
+
+| Part | What you do |
+|---|---|
+| [Part 1 - Reporting](./workshop3/reporting.md) | Plan and build a Next.js analytics dashboard using the Gold schema |
+| [Part 2 - Governance](./workshop3/governance.md) | Review metadata, lineage, architecture, and governance handover evidence |
+
+---
+
+## Repository Map
+
+```text
+DataArchitectWorkshop/
+|-- readme.md      # overview and workshop navigation
+|-- workshop1/     # setup, source connections, security review
+|-- workshop2/     # Bronze, Silver, Kafka, and Gold warehouse build
+|-- workshop3/     # reporting app, governance, lineage, handover
+|-- workshop4/     # optional cleanup/reset scripts
+```
+
+---
+
+## Start Here
+
+Begin with [Workshop 1 - Part 1: Prerequisites & Validation](./workshop1/workshop1-part1-prerequisites.md), then follow each workshop page in order.
