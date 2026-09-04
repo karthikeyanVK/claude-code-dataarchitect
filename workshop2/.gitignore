@@ -18,3 +18,6 @@ Thumbs.db
 # claude-flow state
 .claude-flow/
 .claude/
+workshop2/create_yaml_template.md 
+workshop2/create_star_schema.md 
+workshop2/create_pipeline.md

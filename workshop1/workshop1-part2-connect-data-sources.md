@@ -42,18 +42,19 @@
 #### 3. Verify Kafka streaming
 
 1. Confirm `.env` is in place, then install dependencies:
+2. In the VS Code terminal, navigate to the `workshop1` folder
 
    ```bash
    npm install
    ```
 
-2. In the VS Code terminal, navigate to the `workshop1` folder
-3. Run the connectivity check:
+3. In the VS Code terminal, navigate to the `workshop1` folder
+4. Run the connectivity check:
 
    ```
    node kafkacheck.js                  # fresh random group
-node kafkacheck.js --group my-name  # test stable group
-node kafkacheck.js --timeout 20000  # slow network
+   node kafkacheck.js --group my-name  # test stable group
+   node kafkacheck.js --timeout 20000  # slow network
    ```
 
 > [!NOTE]
