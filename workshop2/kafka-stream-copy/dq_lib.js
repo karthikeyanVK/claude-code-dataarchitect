@@ -5,6 +5,7 @@
 const fs = require('fs');
 const path = require('path');
 const YAML = require('yaml');
+const dotenv = require('dotenv');
 
 const PIPELINE_DIR = __dirname;
 const ENV_PATH = path.join(PIPELINE_DIR, '..', 'pipeline', '.env');
@@ -29,16 +30,8 @@ const PWD_RE = new RegExp(
 );
 
 function loadEnv(file = ENV_PATH) {
-  const values = {};
-  if (!fs.existsSync(file)) return values;
-  for (const raw of fs.readFileSync(file, 'utf8').split(/\r?\n/)) {
-    const line = raw.trim();
-    if (!line || line.startsWith('#')) continue;
-    const idx = line.indexOf('=');
-    if (idx === -1) continue;
-    values[line.slice(0, idx).trim()] = line.slice(idx + 1).trim();
-  }
-  return values;
+  if (!fs.existsSync(file)) return {};
+  return dotenv.parse(fs.readFileSync(file));
 }
 
 function isMasked(value) {
