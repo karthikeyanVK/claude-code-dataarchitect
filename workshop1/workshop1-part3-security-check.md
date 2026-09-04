@@ -6,8 +6,8 @@
 
 ---
 
-1. Open a PowerShell terminal in VS Code and navigate to `workshop1`
-2. Start Claude Code in auto-permission mode in `workshop1` folder:
+1. Open a PowerShell terminal in VS Code
+2. Start Claude Code in auto-permission mode:
 
    ```bash
    claude.cmd --permission-mode auto

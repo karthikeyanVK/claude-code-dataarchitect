@@ -10,8 +10,9 @@ The Workshop 2 Gold-layer star schema must be populated.
 
 ## Workflow
 
-1. Open a terminal in the project 'workshop3' and run `claude`.
-2. Enter `/plan` and use the prompt below.
+1. Stay in the current Claude Code session in the project root.
+2. Use `/clear` to clear the context and save tokens.
+3. Enter `/plan` and use the prompt below.
 
 ## Prompt
 
@@ -40,8 +41,8 @@ Requirements:
 Save the implementation plan as `create_reporting_app.md`. Do not implement the plan and do not run implementation commands in this step.
 ```
 
-3. Enter `Implement create_reporting_app.md` and press enter to run in the claude code and let it run.
-4. Once the implementation is over, in vs code terminal navigate to `workshop3/report` folder and run
+4. Enter `Implement create_reporting_app.md` and press enter to run in the claude code and let it run.
+5. Once the implementation is over, in vs code terminal navigate to `workshop3/report` folder and run
 
 
     ```bash

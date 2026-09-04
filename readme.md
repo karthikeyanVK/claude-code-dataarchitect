@@ -10,7 +10,9 @@ Run the three modules below in order over the day.
 
 Full data platform, one day, AI-driven:
 
-**Security review of raw sources** → **profiled / cleansed / modeled warehouse** (star schema) → **governed, documented, dashboarded analytics layer**.
+| 1. Secure | 2. Model | 3. Analyze |
+|---|---|---|
+| Review raw source data for sensitive fields and risks. | Profile, cleanse, and shape the warehouse into a star schema. | Govern, document, and dashboard the analytics layer. |
 
 ---
 

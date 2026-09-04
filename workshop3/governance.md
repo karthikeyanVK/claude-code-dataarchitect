@@ -6,8 +6,9 @@
 
 ## Workflow
 
-1. Open a terminal in the project 'workshop3' and run `claude`.
-2. Enter `/plan` and use the prompt below.
+1. Stay in the current Claude Code session in the project root.
+2. Use `/clear` to clear the context and save tokens.
+3. Enter `/plan` and use the prompt below.
 
 ## Prompt
 
