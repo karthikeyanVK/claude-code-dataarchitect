@@ -90,6 +90,7 @@
   Create a generic TypeScript/Node.js runner in workshop2/pipeline that:
 
   - Reads the connection string from `.env`.
+  - dq_lib.js use .env file from 'workshop' folder
   - Automatically discovers every YAML file in the `yaml` directory.
   - Reads the `transform_sql`, `load_sql`, and `verify_sql` fields.
   - Executes each YAML file in a deterministic order.
