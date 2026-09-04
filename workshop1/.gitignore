@@ -1,0 +1,16 @@
+# Secrets
+.env
+.kafka_secret
+.blob_sas
+
+# Dependencies
+node_modules/
+package-lock.json
+
+# Claude / tooling state
+.claude-flow/
+.claude/
+
+# OS
+.DS_Store
+Thumbs.db

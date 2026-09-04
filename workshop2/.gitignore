@@ -1,0 +1,20 @@
+# secrets
+.env
+.env.*
+.kafka_secret
+.blob_sas
+
+# node
+node_modules/
+npm-debug.log*
+package-lock.json
+
+# os / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# claude-flow state
+.claude-flow/
+.claude/

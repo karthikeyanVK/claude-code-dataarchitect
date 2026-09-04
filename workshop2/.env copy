@@ -1,0 +1,14 @@
+# Auto-populated from az login — foxpr@hotmail.com / Azure MVP subscription
+
+sqlconection=Server=claudedatadb.database.windows.net,1433;Database=DataWarehouse;User Id=networkadmin;Password=DataWorkshop123!;Encrypt=true;TrustServerCertificate=false;Connection Timeout=30;
+MODEL_DEPLOYMENT_NAME=gpt-4o-mini
+
+# Azure Event Hubs (Kafka-enabled) - campaign-events topic
+# Resource group: claude-data-workshop, namespace: ehns-campaign-events
+# The SASL password (Event Hubs SAS connection string) lives in .kafka_secret, not here.
+KAFKA_BOOTSTRAP_SERVERS=ehns-campaign-events.servicebus.windows.net:9093
+KAFKA_TOPIC=campaign-events
+KAFKA_SASL_USERNAME=$ConnectionString
+KAFKA_SASL_PASSWORD=Endpoint=sb://ehns-campaign-events.servicebus.windows.net/;SharedAccessKeyName=pipeline-access;SharedAccessKey=H9SH9ICPjdl+dYw2EDgVNc9u8gSfNqPJg+AEhLzdDPE=;EntityPath=campaign-events
+
+

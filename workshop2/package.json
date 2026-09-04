@@ -1,0 +1,31 @@
+{
+  "name": "pipeline",
+  "version": "1.0.0",
+  "description": "Data quality checks and the bronze -> silver transform for the DataWarehouse",
+  "main": "index.js",
+  "scripts": {
+    "check": "node run_dq_checks.js --check",
+    "check:trim": "node run_dq_checks.js --type trim --check",
+    "check:dup": "node run_dq_checks.js --type duplicate_key --check",
+    "transform": "node run_dq_checks.js --transform",
+    "load": "node pipeline/run.ts",
+    "load:force": "node run_dq_checks.js --load --force",
+    "load:dry": "node run_dq_checks.js --load --force --dry-run",
+    "validate": "node validate_all_tables.js",
+    "smoke": "node smoke_cli.js",
+    "generate": "python generate_dq_rules.py",
+    "kafka:produce": "node kafka-stream-copy/gen_campaign_events.js --count 200",
+    "kafka:consume": "node kafka-stream-copy/consume_campaign_events.js",
+    "kafka:consume:once": "node kafka-stream-copy/consume_campaign_events.js --once --idle 10",
+    "kafka:validate": "node kafka-stream-copy/validate_bronze_campaign_events.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "kafkajs": "^2.2.4",
+    "mssql": "^12.7.0",
+    "yaml": "^2.9.0"
+  }
+}
