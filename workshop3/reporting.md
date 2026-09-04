@@ -41,7 +41,7 @@ Save the implementation plan as `create_reporting_app.md`. Do not implement the 
 ```
 
 3. Enter `Implement create_reporting_app.md` and press enter to run in the claude code and let it run.
-4. Once the implementation is over then navigate to `workshop3/report` folder and run
+4. Once the implementation is over, in vs code terminal navigate to `workshop3/report` folder and run
 
 
     ```bash

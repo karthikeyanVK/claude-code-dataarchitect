@@ -8,7 +8,7 @@
 
 1. Run the below prompt
 
-   ```
+```
   You are a Data Architect/Data Analyst building the Gold Layer of a data platform using the Medallion Architecture.
 
     Requirements
@@ -55,7 +55,7 @@
       Save the plan to `create_star_schema.md`.
 
       Do not implement the plan and do not ask me for permission to implement it. I will implement it myself.
-    ```
+```
 
 3. Enter `Implement create_star_schema.md` and press enter to run in the claude code and let it run.
 4. Once the implementation is over then navigate to `workshop2/pipeline` folder and run
