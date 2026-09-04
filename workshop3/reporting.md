@@ -28,6 +28,7 @@ Requirements:
 - Use only available Gold tables, columns, relationships, and metrics. Do not invent data, business logic, or metrics.
 - Read the database connection string from `.env` at runtime or through the documented application configuration. Never hardcode credentials or connection strings.
 - Inspect the Gold schema, existing project structure, and governance and lineage documentation before defining pages or metrics.
+- Run independent discovery and planning tasks in parallel whenever possible, such as inspecting the Gold tables, reviewing the existing project structure, and checking governance and lineage documentation. Consolidate the results before making implementation decisions, and avoid parallel tasks that modify the same files.
 - Include appropriate charts, filters, KPI cards, loading states, empty states, and error handling based on the available Gold data.
 - Create two pages:
   1. Sales Trends, showing relevant sales KPIs, trends over time, comparisons, and available business dimensions.
