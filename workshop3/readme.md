@@ -1,12 +1,12 @@
 # Workshop 3 - Reporting and Governance
 
-*Govern the modeled data, then plan an analytics dashboard on the Gold layer.*
+*Plan an analytics dashboard on the Gold layer, then govern the modeled data.*
 
 | Part | What you do |
 |---|---|
-| [Part 1 - Governance](./governance.md) | Review metadata, lineage, and medallion-layer architecture |
-| [Part 2 - Reporting](./reporting.md) | Plan a Gold-schema analytics dashboard |
+| [Part 1 - Reporting](./reporting.md) | Plan a Gold-schema analytics dashboard |
+| [Part 2 - Governance](./governance.md) | Review metadata, lineage, and medallion-layer architecture |
 
 Work through them in order. Each part links back here and to the next step.
 
-**Start here: [Part 1 - Governance](./governance.md)**
+**Start here: [Part 1 - Reporting](./reporting.md)**

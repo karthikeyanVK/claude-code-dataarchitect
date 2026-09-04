@@ -5,8 +5,13 @@
 **[Part 1](./workshop2-part1-bronze-erp-crm.md) · [Part 2](./workshop2-part2-kafka-streaming.md) · Part 3 · [Part 4](./workshop2-part4-star-schema.md)**
 
 ---
+1. Open a PowerShell terminal in VS Code
+2. Start Claude Code in auto-permission mode
 
-1. Run the below prompt to start building silver data.
+   ```bash
+   claude.cmd --permission-mode auto
+   ```
+3. Run the below prompt to start building silver data.
 
    ```
     You are a Data Architect/Data Analyst building the Silver Layer using the Medallion Architecture.

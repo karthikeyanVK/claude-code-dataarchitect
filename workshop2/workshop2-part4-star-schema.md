@@ -5,8 +5,13 @@
 **[Part 1](./workshop2-part1-bronze-erp-crm.md) · [Part 2](./workshop2-part2-kafka-streaming.md) · [Part 3](./workshop2-part3-silver-layer.md) · Part 4**
 
 ---
+1. Open a PowerShell terminal in VS Code
+2. Start Claude Code in auto-permission mode
 
-1. Run the below prompt
+   ```bash
+   claude.cmd --permission-mode auto
+   ```
+3. Run the below prompt
 
 ```
   You are a Data Architect/Data Analyst building the Gold Layer of a data platform using the Medallion Architecture.
@@ -65,4 +70,4 @@
     ```
 ---
 
-**Next: [Part 5 - Design & create report](./workshop2-part5-report.md)**
+**Next: [Workshop 3- Reporting & Governance](../workshop3/readme.md)**

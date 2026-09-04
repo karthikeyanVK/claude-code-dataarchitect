@@ -1,15 +1,13 @@
-# Workshop 3 Part 1 - Data Governance
+# Workshop 3 Part 2 - Data Governance
 
 *Review metadata, lineage, and architecture across the Bronze, Silver, and Gold layers.*
 
-**[Workshop 3](./readme.md) · Part 1 · [Part 2 - Reporting](./reporting.md)**
+**[Workshop 3](./readme.md) · [Part 1 - Reporting](./reporting.md) · Part 2**
 
 ## Workflow
 
-1. Open a terminal in the project root and run `claude`.
+1. Open a terminal in the project 'workshop3' and run `claude`.
 2. Enter `/plan` and use the prompt below.
-3. Save the generated implementation plan as `create_governance.md`.
-4. Do not implement the plan in this step. The plan will be implemented separately after it has been reviewed.
 
 ## Prompt
 
@@ -45,4 +43,4 @@ For database access, read the connection string from the `.env` file. Never hard
 Inspect the existing project structure and Gold schema before making recommendations. Keep the implementation plan separate from implementation work.
 ```
 
-**Next: [Part 2 - Reporting](./reporting.md)**
+**Next: [workshop 4- Skills](../workshop4/readme.md)**
