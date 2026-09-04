@@ -21,7 +21,9 @@ Usage Example:
     EXEC bronze.load_bronze;
 ===============================================================================
 */
-ALTER   PROCEDURE [bronze].[load_bronze] AS
+DROP PROCEDURE IF EXISTS [bronze].[load_bronze];
+GO
+CREATE   PROCEDURE [bronze].[load_bronze] AS
 BEGIN
 	DECLARE @start_time DATETIME, @end_time DATETIME, @batch_start_time DATETIME, @batch_end_time DATETIME;
 
