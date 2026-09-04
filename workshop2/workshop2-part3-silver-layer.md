@@ -16,6 +16,7 @@
     * Read the database connection string from .env.
     * Use template.yaml as the authoritative YAML structure.
     * Do not invent columns, business rules, transformations, or data-quality issues. Derive them from the actual Bronze data.
+    * Run independent discovery and planning tasks in parallel whenever possible, such as profiling separate Bronze tables, reviewing existing YAML examples, and checking pipeline conventions. Consolidate the results before making implementation decisions, and avoid parallel tasks that modify the same files.
     * Create one YAML file for every Bronze table and populate it based on the actual table structure and data.
 
     YAML Template
@@ -99,6 +100,7 @@
   - Same template will be used by gold layer also, just FYI
   - Adding a new Bronze, Silver, or Gold table should require only adding its YAML file.
   - It should work with `npm run load`.
+  - Run independent discovery and planning tasks in parallel whenever possible, such as inspecting existing pipeline files, reviewing YAML templates, and checking package scripts. Consolidate the results before making implementation decisions, and avoid parallel tasks that modify the same files.
   - Create a plan and save it to `create_pipeline.md`.
   - Do not ask for permission to implement the plan. I will run the implementation myself.
   - Perform sanity testing, but do not run `npm run load` yourself.
