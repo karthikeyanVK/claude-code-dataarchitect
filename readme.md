@@ -31,7 +31,7 @@ git pull origin main
 **3. Open the project in VS Code**
 
 ```bash
-cd content
+cd claude-code-dataarchitect
 code .
 ```
 

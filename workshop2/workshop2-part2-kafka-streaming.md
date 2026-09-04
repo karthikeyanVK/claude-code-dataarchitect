@@ -10,6 +10,7 @@
 2. Run:
 
    ```bash
+   npm install
    node kafka-stream-copy/consume_campaign_events.js
    ```
 
