@@ -8,7 +8,7 @@ const YAML = require('yaml');
 const dotenv = require('dotenv');
 
 const PIPELINE_DIR = __dirname;
-const ENV_PATH = path.join(PIPELINE_DIR,  '.env');
+const ENV_PATH = path.join(PIPELINE_DIR, '..', '.env');
 const RULES_DIR = path.join(PIPELINE_DIR, 'dq_rules');
 
 const BOOL_KEYS = new Set(['encrypt', 'trustservercertificate']);
