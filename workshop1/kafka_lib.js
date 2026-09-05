@@ -1,6 +1,6 @@
 const fs = require('fs');
 const path = require('path');
-require('dotenv').config({ path: path.join(__dirname, '..', 'workshop2', 'pipeline', '.env') });
+require('dotenv').config({ path: path.join(__dirname, '.env') });
 
 function kafkaConfig() {
   const brokers = (process.env.KAFKA_BOOTSTRAP_SERVERS || '').split(',').map((s) => s.trim()).filter(Boolean);
