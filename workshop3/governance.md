@@ -40,7 +40,7 @@ Focus on:
    - Include findings, gaps, requirements, diagrams, risks, and evidence-based recommendations.
 
 For database access, read the connection string from the `.env` file. Never hardcode credentials or connection strings. Do not expose secrets in generated documentation.
-
+, 
 Inspect the existing project structure and Gold schema before making recommendations. Keep the implementation plan separate from implementation work.
 ```
 
